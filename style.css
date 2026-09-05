@@ -1,219 +1,95 @@
-/* ==========================================================================
-   iLoveSleep - Premium Wellness Bedding Theme
-   ========================================================================== */
-
-/* Import Google Fonts (Prompt for Clean Body / Playfair Display & Cormorant Garamond for Elegant Serif) */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Prompt:wght@300;400;500&display=swap');
-
 :root {
-  /* Color Palette - Neutral base */
-  --bg-main: #FAF8F5;          /* ขาวครีมอุ่น */
-  --bg-card: #FFFFFF;          /* ขาวบริสุทธิ์สำหรับการ์ด */
-  --bg-subtle: #F3EFEA;        /* เบจอ่อน */
-  --text-main: #2C2A29;        /* เทาดำเข้ม นุ่มตา */
-  --text-muted: #78736F;       /* เทากลาง */
-  --border-color: #E2DDD7;     /* เส้นขอบบางนุ่มตา */
-  
-  /* Brand Accent */
-  --accent-sage: #8A9A86;       /* เขียวเซจ */
-  --accent-gold: #C5A059;       /* ทองอ่อนพรีเมียม */
-
-  /* Mood Accents (สำหรับจุดเน้นเล็กๆ) */
-  --mood-support: #8A9A86;     /* เขียวเซจ */
-  --mood-relax: #9BB0C1;       /* ฟ้าอมเทานุ่มๆ */
-  --mood-cooling: #B4D4E1;     /* ฟ้าเย็นอ่อน */
-  --mood-allergy: #E8D8C8;     /* ครีมอุ่น */
-
-  /* Typography */
-  --font-serif: 'Cormorant Garamond', 'TH Sarabun New', serif;
-  --font-sans: 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif;
-
-  /* Layout Spacing */
-  --section-padding: 80px 20px;
-  --gap-large: 40px;
-  --gap-medium: 24px;
+  --bg-color: #fdfbf7;
+  --card-bg: #ffffff;
+  --text-main: #333333;
+  --text-muted: #666666;
+  --accent-color: #5c7658; /* Sage Green */
+  --border-color: #e5e0d8;
 }
 
-/* Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-  background-color: var(--bg-main);
+  background-color: var(--bg-color);
   color: var(--text-main);
-  font-family: var(--font-sans);
-  font-weight: 300;
-  line-height: 1.8;
-  letter-spacing: 0.02em;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Headings */
-h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--text-main);
-}
-
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 2.2rem;
-  line-height: 1.3;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
-
-/* Section Wrapper with Spacing */
-.section {
-  padding: var(--section-padding);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Mood Indicators (จุดแตะสีเบาๆ) */
-.heading-underline {
-  width: 40px;
-  height: 2px;
-  background-color: var(--accent-sage);
-  margin: 16px auto 0 auto;
-  border-radius: 1px;
-}
-
-.heading-underline.mood-support { background-color: var(--mood-support); }
-.heading-underline.mood-relax   { background-color: var(--mood-relax); }
-.heading-underline.mood-cooling { background-color: var(--mood-cooling); }
-.heading-underline.mood-allergy { background-color: var(--mood-allergy); }
-
-/* Mood Dot / Badge (แตะไอคอนเล็กๆ) */
-.mood-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.mood-badge::before {
-  content: '';
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent-sage);
-}
-
-.mood-badge[data-mood="support"]::before { background-color: var(--mood-support); }
-.mood-badge[data-mood="relax"]::before   { background-color: var(--mood-relax); }
-.mood-badge[data-mood="cooling"]::before { background-color: var(--mood-cooling); }
-.mood-badge[data-mood="allergy"]::before { background-color: var(--mood-allergy); }
-
-/* Buttons & Interactive Elements */
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: transparent;
-  color: var(--text-main);
-  border: 1px solid var(--text-main);
-  border-radius: 0px; /* ทรงเหลี่ยมมินิมอล */
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: var(--text-main);
-  color: var(--bg-main);
-}
-
-.btn-accent {
-  border-color: var(--accent-sage);
-  color: var(--accent-sage);
-}
-
-.btn-accent:hover {
-  background-color: var(--accent-sage);
-  color: #FFFFFF;
-}
-
-/* Product Card Layout */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--gap-large);
-  margin-top: 40px;
-}
-
-.product-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
+  line-height: 1.6;
   padding: 20px;
+}
+
+header, nav, section, footer {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.03);
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
-.product-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background-color: var(--bg-subtle);
-  margin-bottom: 20px;
-}
-
-.product-title {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
-}
-
-.product-price {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
   color: var(--text-main);
-  margin-top: 12px;
+  font-weight: 500;
 }
 
-/* Responsive Utilities */
-@media (max-width: 768px) {
-  :root {
-    --section-padding: 50px 16px;
-    --gap-large: 24px;
-  }
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
 
-  h1 { font-size: 2.1rem; }
-  h2 { font-size: 1.75rem; }
-  
-  .product-grid {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-  }
+.brand-slogan {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.mood-grid, #product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.mood-card, .product-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
