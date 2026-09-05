@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLoveSleep - เพื่อนคู่แท้การนอน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">iLoveSleep</div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="product.html">สินค้าทั้งหมด</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="brand-slogan">iLoveSleep เพื่อนคู่แท้การนอน</h1>
+            <p class="brand-description">
+                ให้ทุกคืนคือการพักผ่อนที่สมบูรณ์แบบ เพื่อให้คุณตื่นมารับวันใหม่ด้วยพลังและความสดชื่นเต็มเปี่ยม
+            </p>
+            <a href="product.html" class="btn-primary">ดูสินค้าทั้งหมด</a>
+        </div>
+    </section>
+
+    <section class="health-moods">
+        <h2>เลือกดูแลสุขภาพการนอนในแบบคุณ</h2>
+        <div class="mood-grid">
+            
+            <a href="product.html?mood=support" class="mood-card mood-support">
+                <h3>ลดปวดสรีระ</h3>
+                <p><strong>Support & Ergonomic:</strong> ดูแลสรีระอย่างตรงจุดด้วยการรองรับที่ถูกต้องตามหลักสรีรศาสตร์ ช่วยปลดล็อกความเมื่อยล้าจากวันอันเหน็ดเหนื่อย และบอกลาอาการปวดคอ หลัง และไหล่ได้อย่างยั่งยืน</p>
+            </a>
+
+            <a href="product.html?mood=relax" class="mood-card mood-relax">
+                <h3>หลับลึกผ่อนคลาย</h3>
+                <p><strong>Relax & Deep Sleep:</strong> โอบอุ้มคุณด้วยสัมผัสนุ่มนวลและกลิ่นหอมปลอบประโลมใจ ช่วยคลายความตึงเครียดของสมองและร่างกาย ให้คุณดำดิ่งสู่การหลับลึกอย่างง่ายดายตลอดคืน</p>
+            </a>
+
+            <a href="product.html?mood=cooling" class="mood-card mood-cooling">
+                <h3>ระบายอากาศเย็นสบาย</h3>
+                <p><strong>Cooling & Breathable:</strong> สัมผัสความเย็นสบายโปร่งเบาด้วยนวัตกรรมระบายความร้อนขั้นสูง เหมาะกับสภาพอากาศเมืองไทย เพื่อการนอนหลับที่ต่อเนื่อง ไร้ปัญหาเหงื่อซึมหรือความอับชื้น</p>
+            </a>
+
+            <a href="product.html?mood=allergy" class="mood-card mood-allergy">
+                <h3>ป้องกันภูมิแพ้และไรฝุ่น</h3>
+                <p><strong>Anti-Allergy:</strong> สร้างพื้นที่การนอนที่สะอาด บริสุทธิ์ และปลอดภัย คัดสรรเส้นใยพิเศษที่ช่วยปกป้องคุณและคนที่คุณรักจากไรฝุ่นและสารก่อภูมิแพ้ได้อย่างมั่นใจ</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 iLoveSleep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

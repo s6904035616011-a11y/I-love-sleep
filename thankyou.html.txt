@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขอบคุณสำหรับการสั่งซื้อ - iLoveSleep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">iLoveSleep</div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="product.html">สินค้าทั้งหมด</a>
+        </nav>
+    </header>
+
+    <!-- Thank You Section -->
+    <main class="thankyou-container">
+        <div class="thankyou-card">
+            <div class="icon-check">✓</div>
+            <h1>ขอบคุณสำหรับการสั่งซื้อ</h1>
+            <p>
+                iLoveSleep ขอขอบคุณที่ไว้วางใจให้เราเป็นส่วนหนึ่งในค่ำคืนการพักผ่อนของคุณ <br>
+                เรากำลังเตรียมจัดส่งสินค้าอย่างพิถีพิถันเพื่อการนอนหลับที่สมบูรณ์แบบที่สุดของคุณ
+            </p>
+            <a href="index.html" class="btn-primary">กลับหน้าแรก</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 iLoveSleep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

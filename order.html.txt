@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งซื้อสินค้า - iLoveSleep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">iLoveSleep</div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="product.html">สินค้าทั้งหมด</a>
+        </nav>
+    </header>
+
+    <!-- Order Form Section -->
+    <main class="order-container">
+        <div class="form-card">
+            <h1>ยืนยันการสั่งซื้อ</h1>
+            <p class="subtitle">กรุณากรอกข้อมูลสำหรับการจัดส่ง เพื่อให้เราดูแลการนอนของคุณอย่างดีที่สุด</p>
+
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">ชื่อลูกค้า</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="ระบุชื่อ-นามสกุล" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">เบอร์โทรศัพท์ / Line ID</label>
+                    <input type="text" id="contact" name="contact" placeholder="ระบุเบอร์โทรศัพท์ หรือ Line ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="items">รายการสินค้า</label>
+                    <textarea id="items" name="items" rows="4" placeholder="รายการสินค้าที่คุณเลือก" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="total">จำนวนเงินรวม (บาท)</label>
+                    <input type="text" id="total" name="total" placeholder="0.00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">หมายเหตุเพิ่มเติม</label>
+                    <textarea id="note" name="note" rows="3" placeholder="ข้อความเพิ่มเติม เช่น เวลาที่สะดวกรับสาย หรือคำขอพิเศษ"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-block">ยืนยันสั่งซื้อ</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 iLoveSleep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

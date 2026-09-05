@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้าทั้งหมด - iLoveSleep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">iLoveSleep</div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="product.html" class="active">สินค้าทั้งหมด</a>
+        </nav>
+    </header>
+
+    <main class="catalog-container">
+        <h1>สินค้าเพื่อสุขภาพการนอน</h1>
+        
+        <div id="filter-bar"></div>
+
+        <div id="product-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 iLoveSleep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
